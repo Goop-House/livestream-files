@@ -8,4 +8,4 @@ ffmpeg \
         textfile=/root/song.txt: reload=1: fontcolor=white: fontsize=(h/30): x=w-tw-30:y=h-th-30" \
     -vcodec libx264 -pix_fmt yuv420p -preset superfast -r 25 -g $((25 * 2)) -b:v 1500k \
     -acodec libmp3lame -ar 44100 -threads 6 -qscale:v 3 -b:a 320000 -bufsize 512k \
-    -f flv "rtmp://a.rtmp.youtube.com/live2/r197-ce71-76w9-224w-35z3"
+    -f flv "[INSERT yt livestream key]"
